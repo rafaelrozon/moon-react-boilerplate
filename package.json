@@ -1,0 +1,77 @@
+{
+  "name": "moon-react-boilerplate",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rafael Rozon"
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "redux",
+    "ramda",
+    "storybook",
+    "minimalist",
+    "creat-react-app",
+    "styled-components",
+    "typescript",
+    "redux-thunk",
+    "react-router",
+    "recompose"
+  ],
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^3.4.1",
+    "antd": "^3.13.2",
+    "cuid": "^2.1.4",
+    "i18next": "^14.0.1",
+    "ramda": "^0.26.1",
+    "react": "^16.8.1",
+    "react-display-name": "^0.2.4",
+    "react-dom": "^16.8.1",
+    "react-i18next": "^9.0.10",
+    "react-redux": "^6.0.0",
+    "react-redux-decorate": "0.0.5",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.3",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1",
+    "redux-act": "^1.7.4",
+    "redux-actions": "^2.6.4",
+    "redux-thunk": "^2.3.0",
+    "reduxsauce": "^1.0.1",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.1.3"
+  },
+  "resolutions": {
+    "ajv": "6.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@storybook/addon-actions": "^4.1.9",
+    "@storybook/addon-knobs": "^4.1.11",
+    "@storybook/addon-links": "^4.1.9",
+    "@storybook/addons": "^4.1.9",
+    "@storybook/react": "^4.1.9",
+    "babel-loader": "8.0.4",
+    "redux-devtools-extension": "^2.13.7"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "clean": "rm -r node_modules; rm package-lock.json; rm yarn.lock",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
