@@ -1,10 +1,10 @@
 /**
- * UserLink - Component
+ * Link - Component
  */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as RRDLink } from "react-router-dom";
-import { translate } from '@decorators';
+import { translate } from '~/decorators';
 import { Icon } from 'antd';
 
 @translate
@@ -12,15 +12,17 @@ export default class Link extends React.Component {
     static propTypes = {
         children: PropTypes.element,
         icon: PropTypes.string,
-        route: PropTypes.string,
+        route: PropTypes.string.isRequired,
         text: PropTypes.string,
         withIcon: PropTypes.bool,
-        t: PropTypes.func
+        t: PropTypes.func.isRequired
     };
 
     static defaultProps = {
         params: {},
-        withIcon: false
+        withIcon: false,
+        children: null,
+        text: ''
     };
 
     render() {
@@ -33,6 +35,3 @@ export default class Link extends React.Component {
         );
     }
 };
-
-
-

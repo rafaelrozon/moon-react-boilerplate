@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Layout, Menu, Row, Col } from 'antd';
-import AppProvider from '@provider/index';
-import { Routes, Links } from '@routes/index';
+import AppProvider from '~/provider';
+import { Routes, Links } from '~/routes';
 import './App.css'
 
 const {

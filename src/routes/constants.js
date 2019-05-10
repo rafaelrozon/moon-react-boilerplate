@@ -14,6 +14,5 @@ export const routes = {
         icon: 'check',
         text: 'todoLink'
     }
-
 };
 

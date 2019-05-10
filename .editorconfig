@@ -11,3 +11,6 @@ indent_brace_style = 1TBS
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*_folder.md]
+indent_size = 2

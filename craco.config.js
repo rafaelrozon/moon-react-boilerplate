@@ -5,32 +5,20 @@ const { paths } = require("@craco/craco");
 module.exports = {
     webpack: {
         alias: {
-           "@": path.resolve(__dirname, "./src/"),
-           "@decorators": path.resolve(__dirname, "./src/decorators/"),
-           "@middlewares": path.resolve(__dirname, "./src/middlewares/"),
-           "@features": path.resolve(__dirname, "./src/features/"),
-           "@pages": path.resolve(__dirname, "./src/pages/"),
-           "@provider": path.resolve(__dirname, "./src/provider/"),
-           "@routes": path.resolve(__dirname, "./src/routes/"),
-           "@static": path.resolve(__dirname, "./src/static/"),
-           "@store": path.resolve(__dirname, "./src/store/"),
-           "@translations": path.resolve(__dirname, "./src/translations/"),
-           "@typings": path.resolve(__dirname, "./src/typings/"),
-           "@utils": path.resolve(__dirname, "./src/utils/")
-        },
-        extensions: ['.ts', '.tsx', '.js', '.jsx']
+            "~": path.resolve(__dirname, "./src/"),
+        }
     },
     jest: {
         configure: {
             moduleNameMapper: {
-                "^@features(.*)$": "<rootDir>/src/modules$1"
+                "^~features(.*)$": "<rootDir>/src/modules$1"
             }
         }
     },
     babel: {
         presets: [],
         plugins: [
-            ["@babel/plugin-proposal-decorators", {"legacy": true }],
+            ["@babel/plugin-proposal-decorators", { "legacy": true }],
         ]
     },
     eslint: {
@@ -45,8 +33,7 @@ module.exports = {
                     "impliedStrict": true,
                     "globalReturn": false,
                     "experimentalObjectRestSpread": true,
-                    "legacyDecorators": true,
-
+                    "legacyDecorators": true
                 }
             },
             "env": {
@@ -55,14 +42,9 @@ module.exports = {
                 "jest": true,
                 "es6": true
             },
-            "plugins": [
-            ],
-            "extends": [
-
-            ],
-            "rules": {
-
-            }
+            "plugins": [],
+            "extends": [],
+            "rules": {}
         }
     }
 };

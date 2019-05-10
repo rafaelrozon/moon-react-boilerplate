@@ -1,6 +1,7 @@
 import { createTypes } from 'reduxsauce';
+import { NS } from './constants';
 
-const prefix = 'todos/';
+const prefix = `${NS}/`;
 
 export default createTypes(`
     ADD

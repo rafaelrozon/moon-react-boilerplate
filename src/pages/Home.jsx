@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import Button from '@features/ui/Button'
-import { translate } from '@decorators';
+import Button from '~/features/ui/Button'
+import { translate } from '~/decorators';
 
 
 @translate

@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
-import middlewares from '@middlewares/index';
+import middlewares from '~/middlewares';
 import rootReducer from './reducer'
+import { DEFAULT_STATE } from './constants';
 
-export default createStore(rootReducer, middlewares);
+export default createStore(rootReducer, middlewares, DEFAULT_STATE);

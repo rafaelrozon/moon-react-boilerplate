@@ -1,6 +1,6 @@
 {
   "name": "moon-react-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Rafael Rozon"
   },
@@ -62,8 +62,13 @@
     "test": "craco test",
     "eject": "craco eject",
     "clean": "rm -r node_modules; rm package-lock.json; rm yarn.lock",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -p 9008 -s public",
+    "build-storybook": "build-storybook -s public",
+    "docs:root": "mddir",
+    "docs:src": "cd src && mddir src",
+    "docs:features": "cd src/features; mddir src/features",
+    "docs:routes": "cd src/routes; mddir src/routes",
+    "docs": "./src/docs/create_dir_list.sh"
   },
   "eslintConfig": {
     "extends": "react-app"

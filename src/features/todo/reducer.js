@@ -4,7 +4,7 @@ import { clone } from 'ramda';
 import { DEFAULT_STATE } from './constants';
 import Types from './types';
 
-const handleAdd = (state, action) => {
+export const handleAdd = (state, action) => {
     const todo = {
         id: cuid(),
         title: action.payload.title,
@@ -14,7 +14,7 @@ const handleAdd = (state, action) => {
     return { ...state, todos: newTodos };
 };
 
-const handleToggle = (state, action) => {
+export const handleToggle = (state, action) => {
     return {
         ...state,
         todos: state.todos.map(td => {
@@ -28,7 +28,7 @@ const handleToggle = (state, action) => {
     }
 };
 
-const handleChangeFitler = (state, action) => {
+export const handleChangeFitler = (state, action) => {
     return {
         ...state,
         todosFilter: action.payload
