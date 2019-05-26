@@ -1042,6 +1042,15 @@
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
 
+"@jeffbski/redux-util@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@jeffbski/redux-util/-/redux-util-3.0.0.tgz#f2e203b1a7cd498c9d91feaffbdfe48795b59f0e"
+  integrity sha512-HpwzLIprq94lRkLirCJsG79USGjmZtExRXgGASKYL8B3EGaeRHtejeuZ/aL18vEVJYQUH09Wa0xW+JamY5HpLg==
+  dependencies:
+    core-js "^2.5.7"
+    invariant "^2.2.1"
+    reduce-reducers "^0.1.0"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -6712,6 +6721,11 @@ lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
 
+lodash.isfunction@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/lodash.isfunction/-/lodash.isfunction-3.0.9.tgz#06de25df4db327ac931981d1bdb067e5af68d051"
+  integrity sha512-AirXNj15uRIMMPihnkInB4i3NHeb4iBtNg9WRWuK2o31S+ePwwNmDPaTL3o7dTJ+VXNZim7rFs4rxN4YU1oUJw==
+
 lodash.isplainobject@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
@@ -6760,6 +6774,11 @@ lodash.templatesettings@^4.0.0:
 lodash.throttle@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+
+lodash.transform@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.transform/-/lodash.transform-4.6.0.tgz#12306422f63324aed8483d3f38332b5f670547a0"
+  integrity sha1-EjBkIvYzJK7YSD0/ODMrX2cFR6A=
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -9451,6 +9470,11 @@ recursive-readdir@2.2.2:
   dependencies:
     minimatch "3.0.4"
 
+reduce-reducers@^0.1.0:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/reduce-reducers/-/reduce-reducers-0.1.5.tgz#ff77ca8068ff41007319b8b4b91533c7e0e54576"
+  integrity sha512-uoVmQnZQ+BtKKDKpBdbBri5SLNyIK9ULZGOA504++VbHcwouWE+fJDIo8AuESPF9/EYSkI0v05LDEQK6stCbTA==
+
 reduce-reducers@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/reduce-reducers/-/reduce-reducers-0.4.3.tgz#8e052618801cd8fc2714b4915adaa8937eb6d66c"
@@ -9476,6 +9500,15 @@ redux-devtools-extension@^2.13.7:
 redux-thunk@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+
+redux-toolbelt@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/redux-toolbelt/-/redux-toolbelt-2.2.4.tgz#ab8733e3daf9a28b109d328aacadacb5e28cd690"
+  integrity sha512-wRRzbscih6EKLzMFISA7oOOJ63pzB5dhF+3MuQm7QQw8hdIrcHI7sVG3+dhAjUdwETlXjouc5lx1my6xJw5SDg==
+  dependencies:
+    lodash.isfunction "^3.0.9"
+    lodash.isplainobject "^4.0.6"
+    lodash.transform "^4.6.0"
 
 redux@^4.0.1:
   version "4.0.1"

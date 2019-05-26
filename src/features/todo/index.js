@@ -1,8 +1,9 @@
-import TodoReducer from './reducer';
-import TodoTypes from './types';
 import * as TodoConstants from './constants';
-import * as TodoActions from './actions';
 import * as TodoSelectors from './selectors';
+import {
+    actions as TodoActions,
+    reducer as todoReducer
+} from './state'
 import Main from './components/Main';
 
 const TodoComponents = {
@@ -10,10 +11,9 @@ const TodoComponents = {
 };
 
 export {
-    TodoReducer,
-    TodoTypes,
-    TodoConstants,
+    todoReducer,
     TodoActions,
+    TodoConstants,
     TodoComponents,
     TodoSelectors
 };

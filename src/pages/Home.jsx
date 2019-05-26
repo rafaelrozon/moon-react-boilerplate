@@ -1,8 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import Button from '~/features/ui/Button'
 import { translate } from '~/decorators';
-
 
 @translate
 class HomePage extends React.Component {

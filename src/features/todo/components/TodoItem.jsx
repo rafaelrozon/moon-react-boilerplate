@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const TodoItemStyles = styled.div`
-  overflowX: 'hidden',
-  textOverflow: 'ellipsis',
-  cursor: 'pointer',
+  overflowX: 'hidden';
+  textOverflow: 'ellipsis';
+  cursor: 'pointer';
   ${props => {
     if (props.completed) {
       return "textDecoration: 'line-through'; opacity: 0.4"
@@ -12,7 +12,7 @@ export const TodoItemStyles = styled.div`
   }}
 `;
 
-const TodoItem = ({ item, toggleItem }) => 
+const TodoItem = ({ item, toggleItem }) =>
   <TodoItemStyles onClick={toggleItem} completed={item.completed}>
     {item.title}
   </TodoItemStyles>

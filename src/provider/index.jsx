@@ -2,8 +2,8 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
-import { store } from '../store';
-import { trans } from '../translations';
+import { store } from '~/state';
+import { trans } from '~/translations';
 
 export default class AppProvider extends React.Component {
     render() {

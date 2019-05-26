@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { routes } from '../constants';
-import TodoPage  from '~/pages/Todos';
+import TodosPage  from '~/pages/Todos';
 import Home from '~/pages/Home';
 
 const RootRoutes = () => (
     <Switch>
-      <Route path={routes.Home.route} component={Home} />
-      <Route path={routes.Todo.route} component={TodoPage} />
+      <Route exact path={routes.Home.route} component={Home} />
+      <Route exact path={routes.Todos.route} component={TodosPage} />
     </Switch>
 );
 

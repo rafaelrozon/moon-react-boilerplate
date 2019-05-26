@@ -21,6 +21,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^3.4.1",
+    "@jeffbski/redux-util": "^3.0.0",
     "antd": "^3.13.2",
     "cuid": "^2.1.4",
     "i18next": "^14.0.1",
@@ -38,6 +39,7 @@
     "redux-act": "^1.7.4",
     "redux-actions": "^2.6.4",
     "redux-thunk": "^2.3.0",
+    "redux-toolbelt": "^2.2.4",
     "reduxsauce": "^1.0.1",
     "reselect": "^4.0.0",
     "styled-components": "^4.1.3"

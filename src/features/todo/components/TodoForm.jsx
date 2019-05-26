@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TodoActions from '../actions';
+import { actions as TodoActions } from '../state';
 
-class TodoForm extends React.Component {
+export class TodoForm extends React.Component {
   state = { title: '' };
 
   handleTitleChange = ev => {
+    ev.preventDefault();
     this.setState({ title: ev.currentTarget.value });
   };
 
@@ -18,7 +19,7 @@ class TodoForm extends React.Component {
     const { title } = this.state;
 
     return (
-      <form>
+      <div>
         <input
           type="text"
           placeholder="Enter new todo"
@@ -29,15 +30,12 @@ class TodoForm extends React.Component {
         <button type="button" onClick={this.handleAdd} disabled={!title}>
           Add
         </button>
-      </form>
+      </div>
     );
   }
 }
 
-@connect(
-    null,
-    dispatch => ({
-        addTodo: title => dispatch(TodoActions.add({ title }))
-    })
-)
-export default class TodoFormContainer extends TodoForm {};
+const mapDispatchToProps = dispatch => ({
+    addTodo: title => dispatch(TodoActions.add({ title }))
+});
+export default connect(null, mapDispatchToProps)(TodoForm);

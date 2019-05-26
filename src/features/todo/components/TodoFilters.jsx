@@ -1,14 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
 import { TodosFilter } from '../constants';
 import { getTodosFilter } from '../selectors';
+import { actions } from '../state';
 
 const SEPARATOR = ' | ';
 const FILTERS = [TodosFilter.All, SEPARATOR, TodosFilter.Active, SEPARATOR, TodosFilter.Completed];
 
 const ButtonStyle = styled.span`
-  cursor: pointer:
+  cursor: pointer;
   ${props => {
         if (props.active) {
             return "textDecoration: 'underline'; fontWeight: 'bold'";
@@ -42,9 +44,9 @@ class TodoFilters extends React.Component {
     }
 }
 
-@connect((state) => ({
+const mapStateToProps = state => ({
     currentFilter: getTodosFilter(state)
-}))
-export default class TodoFiltersContainer extends TodoFilters { };
+});
+const mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);
 
-
+export default connect(mapStateToProps, mapDispatchToProps)(TodoFilters)

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import { TodoComponents } from '~/features/todo';
-import { translate } from '~/decorators/index';
+import { translate } from '~/decorators';
 
 @translate
 class TodosPage extends React.Component {

@@ -20,27 +20,25 @@ class App extends Component {
         return (
             <AppProvider>
                 <AppStyles className="app">
-                <Layout>
-                    <Header>
-                        <Menu
-                            theme="dark"
-                            mode="horizontal"
-                        >
-                            <Menu.Item>
-                                <Links.Home withIcon />
-                            </Menu.Item>
-                            <Menu.Item>
-                                <Links.Todos withIcon />
-                            </Menu.Item>
-                        </Menu>
-                    </Header>
-                    <Content>
-                        <Routes />
-                    </Content>
-                </Layout>
-
-
-                </AppStyles>
+                    <Layout>
+                        <Header>
+                            <Menu
+                                theme="dark"
+                                mode="horizontal"
+                            >
+                                <Menu.Item>
+                                    <Links.Home withIcon />
+                                </Menu.Item>
+                                <Menu.Item>
+                                    <Links.Todos withIcon />
+                                </Menu.Item>
+                            </Menu>
+                        </Header>
+                        <Content>
+                            <Routes />
+                        </Content>
+                    </Layout>
+            </AppStyles>
             </AppProvider>
         );
     }

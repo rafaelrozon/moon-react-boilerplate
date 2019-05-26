@@ -2,7 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import TodoItem from './TodoItem';
-import TodoActions from '../actions';
+import { actions as TodoActions} from '../state';
 import { getFilteredTodos }  from '../selectors';
 
 const TodoListStyles = styled.ul`
@@ -12,6 +12,11 @@ const TodoListStyles = styled.ul`
 `;
 
 class TodoList extends React.Component {
+
+    static defaultProps = {
+        todos: []
+    };
+
     render() {
         const { todos, toggleTodo } = this.props;
         return (
@@ -26,14 +31,10 @@ class TodoList extends React.Component {
     }
 }
 
-@connect(
-    state => ({
-        todos: getFilteredTodos(state.todo),
-    }),
-    dispatch => ({
-        toggleTodo: (todo) => dispatch(TodoActions.toggle(todo))
-    })
-)
-export default class TodoListContainer extends TodoList {}
-
-
+const mapStateToProps = state => ({
+    todos: getFilteredTodos(state)
+});
+const mapDispatchToProps = dispatch => ({
+    toggleTodo: (todo) => dispatch(TodoActions.toggle(todo))
+});
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);

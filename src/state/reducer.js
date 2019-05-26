@@ -1,11 +1,9 @@
 import { combineReducers } from 'redux';
 import {
-    TodoReducer,
+    todoReducer,
     TodoConstants
 } from '~/features/todo';
 
 export default combineReducers({
-  [TodoConstants.NS]: TodoReducer
+  [TodoConstants.NS]: todoReducer
 });
-
-
