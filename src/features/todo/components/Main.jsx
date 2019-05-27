@@ -1,8 +1,8 @@
 import React from 'react';
 
-import TodoList from './TodoList';
-import TodoForm from './TodoForm';
-import TodoFilters from './TodoFilters';
+import TodoList from './List';
+import TodoForm from './Form';
+import TodoFilters from './Filters';
 
 export default () => (
   <React.Fragment>

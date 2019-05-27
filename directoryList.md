@@ -25,16 +25,6 @@
         |   |-- index.js
         |   |-- translate.js
         |-- docs
-        |   |-- directoryList.md
-        |   |-- features_folder.md
-        |   |-- middlewares_folder.md
-        |   |-- pages_folder.md
-        |   |-- root_folder.md
-        |   |-- routes_folder.md
-        |   |-- src_folder.md
-        |   |-- store_folder.md
-        |   |-- translations_folder.md
-        |   |-- utils_folder.md
         |-- features
         |   |-- todo
         |       |-- constants.js
