@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Layout, Menu, Row, Col } from 'antd';
+import { Layout, Menu } from 'antd';
 import AppProvider from '~/provider';
 import { Routes, Links } from '~/routes';
 import './App.css'
 
-const {
-    Header, Footer, Sider, Content,
-} = Layout;
+const { Header, Content } = Layout;
 
 
 const AppStyles = styled.div`

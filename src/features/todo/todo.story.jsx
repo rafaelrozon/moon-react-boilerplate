@@ -5,6 +5,7 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import TodoItem from './components/TodoItem';
 
 const stories = storiesOf('Todo', module);
+
 stories.addDecorator(withKnobs);
 
 stories.add('TodoItem', () => (

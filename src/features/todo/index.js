@@ -2,7 +2,7 @@ import * as TodoConstants from './constants';
 import * as TodoSelectors from './selectors';
 import {
     actions as TodoActions,
-    reducer as todoReducer
+    reducer as TodoReducer
 } from './state'
 import Main from './components/Main';
 
@@ -11,7 +11,7 @@ const TodoComponents = {
 };
 
 export {
-    todoReducer,
+    TodoReducer,
     TodoActions,
     TodoConstants,
     TodoComponents,
